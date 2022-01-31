@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/design.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="..\img\whitelogo.png">
+    <title>Browser</title>
+</head>
+
+<body>
+    <style>
+
+        .browser-container {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+
+        .image {
+            width: 95%;
+        }
+
+        @media (max-width:720px) {
+            .browser-container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .image {
+                width: 99%;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+
+    <header id="header-bar-animation">
+        <img id="lightDark" src="../img/dark theme icon/sun.png" alt="Sun" />
+        <nav>
+            <ul style="list-style: none" class="nav-links">
+                <li><a class="link" href="../index.html">Home</a></li>
+                <li><a class="link" href="about.html">About Me</a></li>
+            </ul>
+        </nav>
+        <!-- <a href="contact.html"><button id="contact">Contact</button></a> -->
+        <div class="dropdown">
+            <button class="dropbtn" style="font-size: 2.2em;">≡
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#Google_Chrome">Google Chrome</a>
+                <a href="#Mozzila_Firefox">Mozzila Firefox</a>
+                <a href="#Microsoft_Edge">Microsoft Edge</a>
+                <a href="#Opera">Opera</a>
+                <a href="#Brave">Brave</a>
+                <a href="#Tor">Tor</a>
+                <a href="#Vivaldi">Vivaldi</a>
+            </div>
+        </div>
+        <img id="logo" src="..\img\whitelogo.png" alt="logo" />
+    </header>
+    <main>
+        <h1>Browser</h1>
+        <p><b>date:</b>20/06/2021</p>
+        <span style="background:rgba(0,0,0,0.3);">*press on the install images to be redirected to their web
+            page*</span>
+        <p>A browser is an application that allows us to manipulate and access a web page.</p>
+        <p>There are a lot of good browser out there so choosing one is pretty hard. I will present some that I used and
+            the best and worst of each so you can find the best for you.</p>
+
+        <h2 id="Google_Chrome">Google Chrome</h2>
+        <p>Google Chrome is by far the most known browser out there.</p>
+        <p>This browser is popular so any problem that you may encounter will be easy to fix with the help of the enorm
+            community. Also, it auto-proclaims to be the fastest out there.</p>
+        <p>The bad thing about Chrome is mostly that is a heavy browser and it works bad on old computers.</p>
+        <div class="browser-container">
+            <img src="../img/browser/google-chrome.png" alt="chrome" class="browser-img image">
+            <a href="https://www.google.com/chrome/" target=_blank title="install chrome">
+                <img src="../img/browser/install-chrome.png" alt="install" class="installer image">
+            </a>
+        </div>
+
+        <h2 id="Mozzila_Firefox">Mozzila Firefox</h2>
+        <p>Mozzila Firefox is a browser mostly use for its stability and security.</p>
+        <p>Mozzila has at the same time a lot of useful developer tools.</p>
+        <p>A downside of it is that it does not support some futures on the newer web pages.</p>
+        <div class="browser-container">
+            <img src="../img/browser/mozzila-firefox.png" alt="firefox" class="browser-img image">
+            <a href="https://www.mozilla.org/en-US/firefox/windows/" target=_blank title="install firefox">
+                <img src="../img/browser/install-firefox.png" alt="install" class="installer image">
+            </a>
+        </div>
+
+
+        <h2 id="Microsoft_Edge">Microsoft Edge</h2>
+        <p>Edge is a chrome based browser, very similar to Google Chrome.</p>
+        <p>The only difference between Edge and Chrome is the less usage of RAM for Edge.</p>
+        <p>I'll say that the bad part about this one is that it doesn't have something to make it different.</p>
+        <div class="browser-container">
+            <img src="../img/browser/microsoft-edge.png" alt="edge" class="browser-img image">
+            <a href="https://www.microsoft.com/en-us/edge?r=1" target=_blank title="install edge">
+                <img src="../img/browser/install-edge.png" alt="install" class="installer image">
+            </a>
+        </div>
+
+
+        <h2 id="Opera">Opera</h2>
+        <p>Opera used to be one of the greatest browsers, but not so much anymore.</p>
+        <p>Since Opera was bought by a Chinese company it was find out that user's data is being sold.</p>
+        <p>Opera has a free VPN directly integrated, a great idea, but I do lack trust for it.</p>
+        <div class="browser-container">
+            <img src="../img/browser/opera.png" alt="opera" class="browser-img image">
+            <a href="https://www.opera.com/" target=_blank title="install opera">
+                <img src="../img/browser/install-opera.png" alt="install" class="installer image">
+            </a>
+        </div>
+
+        <h2 id="Brave">Brave</h2>
+        <p>Brave is a fantastic secure browser.</p>
+        <p>To be true, I just started using it so I didn't find any downsides yet.</p>
+        <div class="browser-container">
+            <img src="../img/browser/brave.png" alt=brave class="browser-img image">
+            <a href="https://brave.com/" target=_blank title="install brave">
+                <img src="../img/browser/install-brave.png" alt="install" class="installer image">
+            </a>
+        </div>
+
+        <h2 id="Tor">Tor</h2>
+        <p>Tor is the best in terms of security.</p>
+        <p>Tor uses what is called "onion" to make you hard to track (not impossible). This concept sents your request
+            to an other computer, then another, then another and after all that to the site you wanted to access.</p>
+        <p>Tor idea is great, but is very slow sometimes. I hope it will become faster and then there will be no other
+            excuse not to use it.</p>
+        <div class="browser-container">
+            <img src="../img/browser/tor.png" alt="tor" class="browser-img image">
+            <a href="https://www.torproject.org/" target=_blank title="install tor">
+                <img src="../img/browser/install-tor.png" alt="install" class="installer image">
+            </a>
+        </div>
+
+        <h2 id="Vivaldi">Vivaldi</h2>
+        <p>Vivaldi is one of the most customizable browsers</p>
+        <p>The bad thing about a lot of customization is that it may slow down the browser.</p>
+        <p>Is similar to Opera, but more private.</p>
+        <div class="browser-container">
+            <img src="../img/browser/vivaldi.png" alt="vivaldi" class="browser-img image">
+            <a href="https://vivaldi.com/" target=_blank title="install vivaldi">
+                <img src="../img/browser/install-vivaldi.png" alt="install" class="installer image">
+            </a>
+        </div>
+
+        <br>
+        <p>This are my experiences with this browsers. I hope you find it useful.</p>
+
+    </main>
+
+    <footer>
+        <p style="text-align: center">©COPYRIGHT TEO</p>
+    </footer>
+
+    <div class="contact-container">
+        <h1>Feel free to share your ideas!</h1>
+        <p>Any advice is welcome as well as any questions about my posts.</p>
+        <h1 style="font-weight: 1000;">CONTACT</h1>
+        <div id="contact-links">
+        <a class="mail" href="mailto:theteocontact@gmail.com"><img id="contact-logo" width=100px
+                src="img/white-mail.png"></a>
+        <a href="https://www.youtube.com/channel/UCq6sXKTdJwOO46vY_B9f0Rg"><img width=100px src="img/youtube-logo.webp"
+                alt="youtube logo"></a>
+        </div>
+    </div>
+    
+    <script src="../javascript/darkmode.js"></script>
+
+</body>
+
+</html>

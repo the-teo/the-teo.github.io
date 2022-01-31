@@ -1,0 +1,164 @@
+w<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/design.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="..\img\whitelogo.png">
+    <title>Firefox Home Page Background</title>
+</head>
+
+<body>
+    <style>
+        .tags {
+            background-color: rgba(163, 178, 218, 0.514);
+            color: black;
+            font-family: "Nanum Gothic Coding", monospace;
+            display: block;
+            width: 50%;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        .tags2 {
+            background-color: rgba(163, 178, 218, 0.514);
+            color: black;
+            font-family: "Nanum Gothic Coding", monospace;
+            text-align: center;
+        }
+
+        .img {
+            border-radius: 15px;
+            width: 60%
+        }
+
+        @media (max-width:720px) {
+            .img {
+                width: 95%;
+            }
+
+            .tags {
+                width: 90%;
+            }
+        }
+    </style>
+
+    <header id="header-bar-animation">
+        <img id="lightDark" src="../img/dark theme icon/sun.png" alt="Sun" />
+        <nav>
+            <ul style="list-style: none" class="nav-links">
+                <li><a class="link" href="../index.html">Home</a></li>
+                <li><a class="link" href="about.html">About Me</a></li>
+            </ul>
+        </nav>
+        <!-- <a href="contact.html"><button id="contact">Contact</button></a> -->
+        <div class="dropdown">
+            <button class="dropbtn" style="font-size: 2.2em;">≡
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#Firefox_Directory">1.Firefox directory</a>
+                <a href="#Changes_in_the_directory">2.Changes in the directory</a>
+                <a href="#Create_files">3.Create files</a>
+                <a href="#Change_firefox_settings">4.Change firefox settings</a>
+            </div>
+        </div>
+        <img id="logo" src="..\img\whitelogo.png" alt="logo" />
+    </header>
+
+
+    <main>
+        <h1>Firefox Home Page Background</h1>
+        <p><b>date:</b>22/07/2021</p>
+        <p>I will guide you step by step, showing you the method I used to change my firefox home page background image.
+        </p>
+        <div id="content">
+            <h2 id="Firefox_Directory">1.Firefox directory</h2>
+            <p>To find the firefox directory go type in your browser this:<span class="tags2">about:support</span></p>
+            <img class="img" src="../img/firefoxhomepagebackground/about-support.png1.png" alt="adress bar">
+            <p>Then find:<span class="tags2">Profile Directory</span></p>
+            <p>and press <span class="tags2">OPEN DIRECTORY</span></p>
+            <img class="img" src="../img/firefoxhomepagebackground/about-support.png2.png" alt="profile directory">
+            <br>
+            <h2 id="Changes_in_the_directory">2.Changes in the directory</h2>
+            <p>Good, now we have the firefox directory.</p>
+            <p>Now, create a new directory named (remember, all letters need to be lowercase)
+            <div class="tags">chrome</div>
+            </p>
+            <img src="../img/firefoxhomepagebackground/chromedirectory.png" alt="chrome directory" class="img">
+            <br>
+            <h2 id="Create_files">3.Create files</h2>
+            <p>Ok, you did good until now. We are almost there.</p>
+            <p>Create a directory named
+            <div class="tags">img</div>
+            </p>
+            <p>create a css file and save it as:
+            <div class="tags">userContent.css</div>
+            </p>
+            <img src="../img/firefoxhomepagebackground/chromefiles.png" alt="chrome files" class="img">
+            <p style="text-decoration: underline;">The content of the CSS file:</p>
+            <div class="tags">@-moz-document url(about:home), url(about:newtab), url(about:privatebrowsing) {
+                .click-target-container *, .top-sites-list * {
+                color: #fff !important ;
+                text-shadow: 2px 2px 2px #222 !important ;
+                }
+
+                body::before {
+                content: "" ;
+                z-index: -1 ;
+                position: fixed ;
+                top: 0 ;
+                left: 0 ;
+                background: #000 no-repeat url(img/roshrach4.jpeg) center ;
+                background-size: cover ;
+                width: 100vw ;
+                height: 100vh ;
+                }
+                }</div>
+            <p>Where you see <span
+                    style="background-color: rgba(163, 178, 218, 0.514);color:black">url(img/roshrach4.jpeg)</span>
+                change
+                the url to your photo location.</p>
+            <img src="../img/firefoxhomepagebackground/cssfile.png" alt="css file" class="img">
+            <br>
+            <h2 id="Change_firefox_settings">4.Change firefox settings</h2>
+            <p>Ok, this is the last step.</p>
+            <p>Go to <span class="tags2">about:config</span> and accept the risks</p>
+            <img src="../img/firefoxhomepagebackground/about-config.png" class="img" alt="about:config page">
+            <p>now in the search bar put <span class="tags2">toolkit.legacyUserProfileCustomizations.stylesheets</span>
+                and
+                set the value to TRUE</p>
+            <img src="../img/firefoxhomepagebackground/true.png" alt="true" class="img">
+            <br>
+            <p>This is how mine looks like:</p>
+            <img src="../img/firefoxhomepagebackground/thumbnail.png" alt="my home page" class="img">
+            <p>You can find me on youtube as well:</p>
+        </div>
+    </main>
+
+    <footer>
+        <p style="text-align: center">©COPYRIGHT TEO</p>
+    </footer>
+
+    <div class="contact-container">
+        <h1>Feel free to share your ideas!</h1>
+        <p>Any advice is welcome as well as any questions about my posts.</p>
+        <h1 style="font-weight: 1000;">CONTACT</h1>
+        <div id="contact-links">
+        <a class="mail" href="mailto:theteocontact@gmail.com"><img id="contact-logo" width=100px
+                src="../img/white-mail.png"></a>
+        <a href="https://www.youtube.com/channel/UCq6sXKTdJwOO46vY_B9f0Rg"><img width=100px src="../img/youtube-logo.webp"
+                alt="youtube logo"></a>
+        </div>
+    </div>
+
+    <script src="../javascript/darkmode.js"></script>
+
+</body>
+
+</html>
