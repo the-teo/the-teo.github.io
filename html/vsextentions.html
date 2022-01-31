@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/design.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="..\img\whitelogo.png">
+    <title>VS Extention</title>
+</head>
+
+<body>
+    <style>
+
+        .ext-img {
+            width: 60%;
+            border-radius: 20px;
+        }
+
+        .ext-vid {
+            width: 50%;
+            border-radius: 20px;
+        }
+
+        @media (max-width:720px) {
+            .ext-img {
+                width: 95%;
+            }
+
+            .ext-vid {
+                width: 90%;
+            }
+        }
+    </style>
+    <header id="header-bar-animation">
+        <img id="lightDark" src="../img/dark theme icon/sun.png" alt="Sun" />
+        <nav>
+            <ul style="list-style: none" class="nav-links">
+                <li><a class="link" href="../index.html">Home</a></li>
+                <li><a class="link" href="about.html">About Me</a></li>
+            </ul>
+        </nav>
+        <!-- <a href="contact.html"><button id="contact">Contact</button></a> -->
+        <div class="dropdown">
+            <button class="dropbtn" style="font-size: 2.2em;">≡
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#Auto_Rename_Tag">A.Auto Rename Tag</a>
+                <a href="#Bracket_Pair_Colorizer_2">B.Bracket Pair Colorizer 2</a>
+                <a href="#Css_Peek">C.Css Peek</a>
+                <a href="#Just_Black">D.Just Black</a>
+                <a href="#Prettier">E.Prettier</a>
+            </div>
+        </div>
+        <img id="logo" src="..\img\whitelogo.png" alt="logo" />
+    </header>
+
+    <main>
+        <h1>Visual Studio Code Extensions</h1>
+        <p><b>date:</b>31/05/2021</p>
+
+        <ol type="A">
+            <li>
+                <h2 id="Auto_Rename_Tag">Auto Rename Tag</h2>
+                <img class="ext-img" src="..\img\vs extensions\autorenametag.png" alt="extension logo">
+                <p>This specific extension is useful for HTML/XML. When it is activate it will automatically rename the
+                    closing
+                    tag after the opening tag.</p>
+                <p>Personally, I find this very helpful and it saved a lot of time for me.</p>
+                <br>
+                <h4>Here is an exemple:</h4>
+                <video class="ext-vid" src="..\img\vs extensions\autorenametag.mp4" controls></video>
+            </li>
+            <li>
+                <h2 id="Bracket_Pair_Colorizer_2">Bracket Pair Colorizer 2</h2>
+                <img class="ext-img" src="..\img\vs extensions\bracket.png" alt="extension logo">
+                <p>This extension adds a colored path from the opening bracket to the closing bracket.</p>
+                <p>I find it more easily to separate different functions.</p>
+                <h4>This is how it looks:</h4>
+                <img class="ext-img" src="..\img\vs extensions\bracket2.png" alt="extension logo">
+            </li>
+            <li>
+                <h2 id="Css_Peek">Css Peek</h2>
+                <img class="ext-img" src="..\img\vs extensions\csspeek.png" alt="extension logo">
+                <p>This extension is useful when it comes to web developing.</p>
+                <p>It gives you the css location of the id/class you select, helping you to find it faster.</p>
+                <h4>Here is how it works (ctrl + hover the id/class):</h4>
+                <video class="ext-vid" src="..\img\vs extensions\csspeek.mp4" controls></video>
+            </li>
+            <li>
+                <h2 id="Just_Black">Just Black</h2>
+                <img class="ext-img" src="..\img\vs extensions\justblack.png" alt="extension logo">
+                <p>This is the extension of the theme that I use.</p>
+                <p>I like it since is completely dark, being easier for my eyes after hours of staying in front of a
+                    computer.
+                </p>
+            </li>
+            <li>
+                <h2 id="Prettier">Prettier</h2>
+                <img class="ext-img" src="..\img\vs extensions\prettier.png" alt="extension logo">
+                <p>Prettier is awesome because it arrange your code when you save it, making it easier to read.</p>
+                <p>At the same time, it makes your code look cleaner.</p>
+                <video class="ext-vid" src="../img/vs extensions/prettier.mp4" controls></video>
+            </li>
+        </ol>
+    </main>
+
+    <footer>
+        <p style="text-align: center">©COPYRIGHT TEO</p>
+    </footer>
+
+    <div class="contact-container">
+        <h1>Feel free to share your ideas!</h1>
+        <p>Any advice is welcome as well as any questions about my posts.</p>
+        <h1 style="font-weight: 1000;">CONTACT</h1>
+        <div id="contact-links">
+        <a class="mail" href="mailto:theteocontact@gmail.com"><img id="contact-logo" width=100px
+                src="../img/white-mail.png"></a>
+        <a href="https://www.youtube.com/channel/UCq6sXKTdJwOO46vY_B9f0Rg"><img width=100px src="../img/youtube-logo.webp"
+                alt="youtube logo"></a>
+        </div>
+    </div>
+
+    <script src="../javascript/darkmode.js"></script>
+</body>
+
+</html>
