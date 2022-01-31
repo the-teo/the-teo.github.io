@@ -1,0 +1,142 @@
+body {
+  font-family: "Inconsolata", monospace;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-weight: var(--font-weight);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#lightDark {
+  height: 7vh;
+  margin-right: -2vw;
+  margin-left: 2vw;
+  cursor: pointer;
+}
+#logo {
+  margin-right: 6%;
+  cursor: pointer;
+  margin-left: auto;
+  width: 12vh;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 20px;
+}
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+/* #contact {
+  padding: 9px 25px;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  color: rgb(255, 254, 254);
+  cursor: pointer;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+  margin-left: 20px;
+}
+#contact:hover,
+#contact:focus,
+button:hover,
+button:focus {
+  background-color: rgb(255, 255, 255);
+  border: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+button {
+  background-color: rgb(0, 0, 0);
+  border: none;
+  color: rgb(255, 254, 254);
+  cursor: pointer;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+} */
+.link {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.link:hover,
+.link:focus {
+  color: var(--text-color-hover);
+}
+:root {
+  --post-hover-shadow: rgb(126, 117, 117);
+  --background-color: rgb(36, 34, 34);
+  --text-color: rgb(255, 255, 255);
+  --text-color-hover: rgb(0, 0, 0);
+  --welcome-text-color: rgb(148, 219, 247);
+  --header-scroll-main-color: rgb(40, 90, 79);
+  --header-scroll-secondary-color: rgba(40, 90, 79, 0);
+  --header-scroll-main-hover-color: rgb(20, 70, 59);
+  --header-scroll-secondary-hover-color: rgba(20, 70, 59, 0);
+  --font-weight: 400;
+}
+.light-theme {
+  --post-hover-shadow: rgb(126, 117, 117);
+  --background-color: rgb(211, 207, 207);
+  --text-color: rgb(0, 0, 0);
+  --text-color-hover: rgb(255, 255, 255);
+  --welcome-text-color: rgb(47, 72, 88);
+  --header-scroll-main-color: rgb(20, 69, 102);
+  --header-scroll-secondary-color: rgba(44, 69, 85, 0.5);
+  --header-scroll-main-hover-color: rgb(20, 49, 82);
+  --header-scroll-secondary-hover-color: rgba(20, 49, 82, 0.5);
+  --font-weight: 550;
+}
+:focus {
+  text-decoration: underline;
+  outline: 1px solid var(--text-color);
+  outline-offset: 2px;
+}
+#contact:focus {
+  outline: none;
+  box-shadow: 4px 5px 6px rgb(0, 0, 0);
+}
+#contact-link:focus {
+  outline: none;
+}
+::-moz-focus-inner {
+  border: 0;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--backgorund-color);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background: var(--header-scroll-main-color);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--header-scroll-main-hover-color);
+}
+
+footer {
+  background-color: rgb(166, 152, 153);
+  color: black;
+  text-align: center;
+}
+@media (max-width: 720px) {
+  #logo {
+    width: 8vh;
+  }
+  #contact {
+    margin-left: 5px;
+  }
+  .nav-links li {
+    display: inline-block;
+    padding: 5px;
+    margin-left: -20px;
+  }
+  .nav-links li a {
+    margin-left: 10px;
+  }
+  #logo {
+    margin-right: 0px;
+  }
+}
