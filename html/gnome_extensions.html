@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/design.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="..\img\whitelogo.png">
+    <title>Gnome Extensions</title>
+</head>
+
+<body>
+    <style>
+        .tags {
+            background-color: rgba(163, 178, 218, 0.514);
+            color: black;
+            font-family: "Nanum Gothic Coding", monospace;
+            display: block;
+            width: 50%;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        img {
+            border-radius: 15px;
+        }
+
+        .images {
+            width: 40%;
+            border-radius: 20px;
+        }
+
+        .video {
+            width: 50%;
+            border-radius: 20px;
+        }
+
+        @media (max-width:720px) {
+            .images {
+                width: 95%;
+            }
+
+            .video {
+                width: 90%;
+            }
+
+            .tags {
+                width: 90%;
+            }
+        }
+    </style>
+    <header id="header-bar-animation">
+        <img id="lightDark" src="../img/dark theme icon/sun.png" alt="Sun">
+        <nav>
+            <ul style="list-style: none;" class="nav-links">
+                <li><a class="link" href="../index.html">Home</a></li>
+                <li><a class="link" href="about.html">About Me</a></li>
+            </ul>
+        </nav>
+        <!-- <a href="contact.html"><button id="contact">Contact</button></a> -->
+        <div class="dropdown">
+            <button class="dropbtn" onclick=menu() style="font-size: 2.2em;">≡
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#where">Where to find them?</a>
+                <a href="#bluetooth">Bluetooth Quick Connect</a>
+                <a href="#burn">Burn My Windows</a>
+                <a href="#clipboard">Clipboard Indicator</a>
+            </div>
+        </div>
+        <img id="logo" src="..\img\whitelogo.png" alt="logo">
+    </header>
+
+    <main>
+        <h1>Gnome Extensions</h1>
+        <p>date:30/04/2022</p>
+        <p>*press the photos to access their website*</p>
+        <p>Today we're gonna drive into the endless world of gnome extensions. There are a lot of good ones out there,
+            but, as always, I'll speak only of the ones I'm using or I used. </p>
+
+        <h2 id="where">Where to find them?</h2>
+        <p>Now, finding the right site is easy enough. You just have to open your chosen browser and search for, well,
+            "gnome extensions".</p>
+        <p>The most used one is gnome extensions. This is it:</p>
+        <a target="_blank" href="https://extensions.gnome.org/#">
+            <img class="images" src="../img/gnome_extensions/linked_page.png" alt="screenshot from the site">
+        </a>
+        <br>
+
+        <ol type="1">
+            <li>
+                <h2 id="bluetooth">Bluetooth Quick Connect</h2>
+                <a href="https://extensions.gnome.org/extension/1401/bluetooth-quick-connect/" target="_blank"><img
+                        width=450px class="images" src="../img/gnome_extensions/bluetooth1.png"
+                        alt="Bluetooth Quick Connect"></a>
+                <p>The name of this extension already explains its purpose. It adds in the gnome control panel an easy
+                    way to access your Bluetooth devices. This makes it faster to run through your gadgets.</p>
+                <p>With the theme I use it looks like this:</p>
+                <img src="../img/gnome_extensions/bluetooth2.png" alt="how it looks on my pc">
+                <p>Personally, I find this one very useful since I tend to circle through my headsets pretty often.
+                    Saving time is always my priority.</p>
+                <p>Plus, this extension has some useful settings. Such as:</p>
+                <img src="../img/gnome_extensions/bluetooth3.png" alt="its senttings" class="images">
+            </li>
+            <br>
+            <li>
+                <h2 id="burn">Burn My Windows</h2>
+                <a href="https://extensions.gnome.org/extension/4679/burn-my-windows/" target="_blank"><img width=450px
+                        class="images" src="../img/gnome_extensions/burn1.png" alt="Burn My Windows"></a>
+                <p>Ok, useful extensions are great, but what about fun ones? Burn My Windows is one of my favourite
+                    extensions. Especially because it makes my PC look sick.</p>
+                <p>This thing gives you the option to choose from a range of animations and to set to for when a window
+                    is opened or closed.</p>
+                <p>Let me show you how it looks:</p>
+                <video class="video" src="..\img\gnome_extensions\burn.mp4" controls></video>
+                <p>Now, the best part here is that we have the power to customise however we like. We can play with
+                    speed, colors and so on.</p>
+                <img src="../img/gnome_extensions/burn2.png" alt="its senttings" class="images">
+                <img src="../img/gnome_extensions/burn3.png" alt="settings for a specific animations" class="images">
+            </li>
+            <br>
+            <li>
+                <h2 id="clipboard">Clipboard Indicator</h2>
+                <a href="https://extensions.gnome.org/extension/779/clipboard-indicator/" target="_blank"><img
+                        width=450px class="images" src="../img/gnome_extensions/clipboard1.png"
+                        alt="Clipboard Indicator"></a>
+                <p>Let's see another useful extension. You don't think you need one of these until you lose an important
+                    text you just copied or until you need to copy and paste for eternity. Clipboard Indicator has saved
+                    me from losing my writing a thousand times. </p>
+                <p>This is how it looks with the theme I have:</p>
+                <img src="../img/gnome_extensions/clipboard2.png" alt="how it looks for me" class="images">
+                <p>And, this are the settings that comes with it:</p>
+                <img src="../img/gnome_extensions/clipboard3.png" alt="its senttings" class="images">
+                <p>So, you can make sure that it suits your workflow.</p>
+            </li>
+        </ol>
+        <br>
+        <p>This is all I had for today. I might make a part two in the future since there are a lot of great extensions
+            out there.</p>
+
+
+
+    </main>
+
+    <footer>
+        <p style="text-align: center;">©COPYRIGHT TEO</p>
+    </footer>
+
+    <div class="contact-container">
+        <h1>Feel free to share your ideas!</h1>
+        <p>Any advice is welcome as well as any questions about my posts.</p>
+        <h1 style="font-weight: 1000;">CONTACT</h1>
+        <div id="contact-links">
+            <a class="mail" href="mailto:theteocontact@gmail.com"><img id="contact-logo" width=100px
+                    src="../img/white-mail.png"></a>
+            <a href="https://www.youtube.com/channel/UCq6sXKTdJwOO46vY_B9f0Rg"><img width=100px
+                    src="../img/youtube-logo.webp" alt="youtube logo"></a>
+        </div>
+    </div>
+
+    <script src="../javascript/darkmode.js"></script>
+</body>
+
+</html>
