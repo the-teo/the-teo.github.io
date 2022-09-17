@@ -1,0 +1,81 @@
+.welcome {
+  background-image: url("../img/codrut2.jpeg");
+  background-position: top;
+  background-size: cover;
+  border-radius: 2em;
+  margin: 3rem 0.5em 0.5em 0.5em ;
+  margin-bottom: 25px;
+  height: 80vh;
+  color: var(--welcome-text-color);
+  display: flex;
+  gap: 0.2rem;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.welcome-items {
+  text-align: center;
+  font-size: 1.90em;
+  background-color: var(--background-welcome-text);
+  z-index: 1;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 100px;
+}
+.post {
+  margin-top: 5rem;
+  display: flex;
+  color: rgb(255, 255, 255);
+  flex-direction: column;
+  background-color: rgb(73, 68, 68);
+  width: 90%;
+  height: 80%;
+  border-radius: 25px;
+  text-align: center;
+  margin-left: 20px;
+  transition: var(--transition);
+} 
+.post p {
+  padding: 1rem;
+}
+a:focus > .post {
+  box-shadow: 3px 6px 10px var(--post-hover-shadow);
+  transform: scale(1.01);
+} 
+.post:hover,
+.post:focus {
+  box-shadow: 3px 6px 10px var(--post-hover-shadow);
+  transform: scale(1.01);
+}
+a {
+  text-decoration: none;
+}
+h4 {
+  color: var(--accent-color);
+  transition: color 0.2s linear;
+  text-decoration: underline;
+}
+h4:hover,
+h4:focus {
+  color: var(--accent-color-hover);     
+}
+
+.post-images {
+  border-radius:25px 25px 0 0;
+}
+
+@media (max-width: 801px) {  
+  .posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .post {
+    margin-top: 50px;
+    width: 80vw;
+  }
+}

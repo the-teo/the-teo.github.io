@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/design.css">
@@ -27,6 +28,7 @@
 
         img {
             border-radius: 15px;
+            width 60%;
         }
 
         @media (max-width:720px) {
@@ -39,15 +41,45 @@
             }
         }
     </style>
-    <header id="header-bar-animation">
-        <img id="lightDark" src="../img/dark theme icon/sun.png" alt="Sun">
-        <nav>
-            <ul style="list-style: none;" class="nav-links">
-                <li><a class="link" href="../index.html">Home</a></li>
-                <li><a class="link" href="about.html">About Me</a></li>
-            </ul>
+    <header>
+         <nav>
+            <div class="nav-center">
+                <div class="nav-header">
+                    <img tabindex="0" style="cursor: pointer;" id="lightDark" class="icon" src="img/dark theme icon/sun.png" alt="Sun">
+                    <img id="logo" class="icon" src="img/whitelogo.png" alt="logo">
+                </div>
+                <div class="nav-toggle">
+                    <button class="nav-toggle">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+                <ul style="list-style: none;" class="links">
+                    <li>
+                        <a class="link" href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../html/about.html">About Me</a>
+                    </li>
+                    <li>
+                        <a href="mailto:theteocontact@gmail.com">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCq6sXKTdJwOO46vY_B9f0Rg">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-        <!-- <a href="contact.html"><button id="contact">Contact</button></a> -->
+    </header>
+
+    <main>
+        <h1>...</h1>
+        <p>date:15/01/2005</p>
+
+        <h2>Jump to content:</h2>
         <div class="dropdown">
             <button class="dropbtn" onclick=menu() style="font-size: 2.2em;">≡
                 <i class="fa fa-caret-down"></i>
@@ -58,12 +90,6 @@
                 <a href="#"></a>
             </div>
         </div>
-        <img id="logo" src="..\img\whitelogo.png" alt="logo">
-    </header>
-
-    <main>
-        <h1>...</h1>
-        <p>date:15/01/2005</p>
 
         <h2>...</h2>
 
@@ -73,18 +99,12 @@
         <p style="text-align: center;">©COPYRIGHT TEO</p>
     </footer>
 
-    <div class="contact-container">
-        <h1>Feel free to share your ideas!</h1>
-        <p>Any advice is welcome as well as any questions about my posts.</p>
-        <h1 style="font-weight: 1000;">CONTACT</h1>
-        <div id="contact-links">
-            <a class="mail" href="mailto:theteocontact@gmail.com"><img id="contact-logo" width=100px
-                    src="../img/white-mail.png"></a>
-            <a href="https://www.youtube.com/channel/UCq6sXKTdJwOO46vY_B9f0Rg"><img width=100px
-                    src="../img/youtube-logo.webp" alt="youtube logo"></a>
-        </div>
+    <div class="container-end-page">
+        <h1 style="text-align: center;">Feel free to share your ideas!</h1>
+        <p style="text-align: center;">Any advice is welcome as well as any questions about my posts.</p>
     </div>
 
+    <script src="../javascript/dropDownLinks.js"></script>
     <script src="../javascript/darkmode.js"></script>
 </body>
 

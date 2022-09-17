@@ -1,0 +1,334 @@
+
+h1 {
+  text-align: center;
+  border-bottom: 0.1vh dashed var(--accent-color);
+}
+
+h2 {
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-color: rgb(40, 90, 79);
+}
+
+img {
+  float: right;
+  margin-left: 0.3vw;
+}
+ul {
+  list-style: square;
+}
+ ol[type=A], li {
+   margin: 0;
+   padding: 0;
+ }
+
+h3 + img {
+  width: 30%;
+  max-width: 300px;
+}
+
+.green-arrow-table {
+  background-color: rgb(116, 142, 84);
+  border: 0.2vh solid rgb(69, 85, 50);
+  color: rgb(53, 65, 39);
+  margin-bottom: 5vh;
+}
+
+.black-canary-table {
+  background-color: rgb(156, 145, 79);
+  border: 0.2vh solid rgb(100, 93, 51);
+  color: rgb(53, 49, 27);
+  margin-bottom: 5vh;
+}
+
+.cyborg-table {
+  background-color: rgb(165, 163, 148);
+  border: 0.2vh solid rgb(90, 89, 82);
+  color: rgb(59, 59, 53);
+  margin-bottom: 5vh;
+}
+
+.zatanna-table {
+  background-color: rgb(214, 102, 218);
+  border: 0.2vh solid rgb(99, 42, 104);
+  color: rgb(59, 15, 52);
+  margin-bottom: 5vh;
+}
+
+.huntress-table {
+  background-color: rgb(255, 104, 197);
+  border: 0.2vh solid rgb(99, 42, 104);
+  color: rgb(99, 12, 60);
+  margin-bottom: 5vh;
+}
+
+.jessica-jones-table {
+  background-color: rgb(0, 0, 0);
+  border: 0.2vh solid rgb(161, 161, 161);
+  color: rgb(161, 161, 161);
+  margin-bottom: 5vh;
+}
+
+.iron-man-table {
+  background-color: rgb(149, 94, 66);
+  border: 0.2vh solid rgb(77, 49, 35);
+  color: rgb(34, 22, 16);
+  margin-bottom: 5vh;
+}
+
+#green-arrow-title,
+#green-arrow-paragraph {
+  color: var(--green-arrow-color);
+}
+
+#black-canary-title,
+#black-canary-paragraph {
+  color: var(--black-canary-color);
+}
+
+#cyborg-title,
+#cyborg-paragraph {
+  color: var(--cyborg-color);
+}
+
+#zatanna-title,
+#zatanna-paragraph {
+  color: var(--zatanna-color);
+}
+
+#huntress-title,
+#huntress-paragraph {
+  color: var(--huntress-color);
+}
+
+#jessica-jones-title,
+#jessica-jones-paragraph {
+  color: var(--jessica-jones-color);
+}
+
+#iron-man-title,
+#iron-man-paragraph {
+  color: var(--iron-man-color);
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[id="green-arrow-bar"] {
+    overflow: hidden;
+    width: 20vw;
+    -webkit-appearance: none;
+    background-color: #998a8a;
+    border-radius: 50px;
+  }
+
+  input[id="green-arrow-bar"]::-webkit-slider-runnable-track {
+    height: 2vh;
+    -webkit-appearance: none;
+    width: 2vw;
+    -webkit-appearance: none;
+    height: 2vh;
+    cursor: ew-resize;
+    background: #88f057;
+    box-shadow: -20vw 0 0 20vw rgb(53, 65, 39);
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[id="black-canary-bar"] {
+    overflow: hidden;
+    width: 20vw;
+    -webkit-appearance: none;
+    background-color: #998a8a;
+    border-radius: 50px;
+  }
+
+  input[id="black-canary-bar"]::-webkit-slider-runnable-track {
+    height: 2vh;
+    -webkit-appearance: none;
+    color: rgb(141, 143, 31);
+    margin-top: -1px;
+  }
+
+  input[id="black-canary-bar"]::-webkit-slider-thumb {
+    width: 2vw;
+    -webkit-appearance: none;
+    height: 2vh;
+    cursor: ew-resize;
+    background: #c7e90b;
+    box-shadow: -20vw 0 0 20vw rgb(141, 143, 31);
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[id="cyborg-bar"] {
+    overflow: hidden;
+    width: 20vw;
+    -webkit-appearance: none;
+    border-radius: 50px;
+  }
+
+  input[id="cyborg-bar"]::-webkit-slider-runnable-track {
+    height: 2vh;
+    -webkit-appearance: none;
+    color: rgb(99, 107, 90);
+    margin-top: -1px;
+  }
+
+  input[id="cyborg-bar"]::-webkit-slider-thumb {
+    width: 2vw;
+    -webkit-appearance: none;
+    height: 2vh;
+    cursor: ew-resize;
+    background: #b5b8b3;
+    box-shadow: -20vw 0 0 20vw rgb(73, 77, 68);
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[id="zatanna-bar"] {
+    overflow: hidden;
+    width: 20vw;
+    -webkit-appearance: none;
+    background-color: #998a8a;
+    border-radius: 50px;
+  }
+
+  input[id="zatanna-bar"]::-webkit-slider-runnable-track {
+    height: 2vh;
+    -webkit-appearance: none;
+    color: rgb(109, 28, 105);
+    margin-top: -1px;
+  }
+
+  input[id="zatanna-bar"]::-webkit-slider-thumb {
+    width: 2vw;
+    -webkit-appearance: none;
+    height: 2vh;
+    cursor: ew-resize;
+    background: #ef41ff;
+    box-shadow: -20vw 0 0 20vw rgb(109, 28, 105);
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[id="huntress-bar"] {
+    overflow: hidden;
+    width: 20vw;
+    -webkit-appearance: none;
+    background-color: #998a8a;
+    border-radius: 50px;
+  }
+
+  input[id="huntress-bar"]::-webkit-slider-runnable-track {
+    height: 2vh;
+    -webkit-appearance: none;
+    color: rgb(124, 28, 68);
+    margin-top: -1px;
+  }
+
+  input[id="huntress-bar"]::-webkit-slider-thumb {
+    width: 2vw;
+    -webkit-appearance: none;
+    height: 2vh;
+    cursor: ew-resize;
+    background: #eb1190;
+    box-shadow: -20vw 0 0 20vw rgb(124, 28, 68);
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[id="jessica-jones-bar"] {
+    overflow: hidden;
+    width: 20vw;
+    -webkit-appearance: none;
+    background-color: #998a8a;
+    border-radius: 50px;
+  }
+
+  input[id="jessica-jones-bar"]::-webkit-slider-runnable-track {
+    height: 2vh;
+    -webkit-appearance: none;
+    color: rgb(0, 0, 0);
+    margin-top: -1px;
+  }
+
+  input[id="jessica-jones-bar"]::-webkit-slider-thumb {
+    width: 2vw;
+    -webkit-appearance: none;
+    height: 2vh;
+    cursor: ew-resize;
+    background: #ffffff;
+    box-shadow: -20vw 0 0 20vw black;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[id="iron-man-bar"] {
+    overflow: hidden;
+    width: 20vw;
+    -webkit-appearance: none;
+    background-color: #998a8a;
+    border-radius: 50px;
+  }
+
+  input[id="iron-man-bar"]::-webkit-slider-runnable-track {
+    height: 2vh;
+    -webkit-appearance: none;
+    color: rgb(102, 11, 11);
+    margin-top: -1px;
+  }
+
+  input[id="iron-man-bar"]::-webkit-slider-thumb {
+    width: 2vw;
+    -webkit-appearance: none;
+    height: 2vh;
+    cursor: ew-resize;
+    background: #f31e1e;
+    box-shadow: -20vw 0 0 20vw rgb(102, 11, 11);
+  }
+}
+
+input[type="range"] {
+  margin-bottom: 10vh;
+}
+
+
+:root {
+  --green-arrow-color: rgb(154, 197, 106);
+  --black-canary-color: rgb(218, 198, 87);
+  --cyborg-color: rgb(158, 158, 152);
+  --zatanna-color: rgb(204, 73, 182);
+  --huntress-color: rgb(212, 50, 139);
+  --jessica-jones-color: rgb(161, 161, 161);
+  --iron-man-color: rgb(197, 82, 82);
+}
+
+.light-theme {
+  --green-arrow-color: rgb(60, 128, 12);
+  --black-canary-color: rgb(138, 126, 21);
+  --cyborg-color: rgb(88, 88, 86);
+  --zatanna-color: rgb(121, 18, 105);
+  --huntress-color: rgb(121, 11, 44);
+  --jessica-jones-color: rgb(0, 0, 0);
+  --iron-man-color: rgb(73, 10, 10);
+}
+
+@media (max-width:720px){
+  img {
+    float:none;
+  }
+  #green-arrow-title +  img,
+  #black-canary-title + img,
+  #cyborg-title + img,
+  #zatanna-title + img,
+  #huntress-title + img,
+  #jessica-jones-title + img,
+  #iron-man-title + img {
+    width: 20%;
+    min-width: 180px;
+  }
+
+  table {
+    width: 99%;
+  }
+  
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/design.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="..\img\whitelogo.png">
+    <title>Browser Extensions</title>
+</head>
+
+<body>
+    <style>
+        .tags {
+            background-color: rgba(163, 178, 218, 0.514);
+            color: black;
+            font-family: "Nanum Gothic Coding", monospace;
+            display: block;
+            width: 50%;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        table {
+            background-color: #000;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        table thead tr th,
+        table tbody tr td {
+            border: 0.2vh solid rgb(65, 64, 64);
+            padding: 7px;
+            color: #fff;
+        }
+
+        .images {
+            border-radius: 15px;
+        }
+
+        @media (max-width:720px) {
+            .images {
+                width: 90%;
+            }
+
+            .tags {
+                width: 90%;
+            }
+        }
+    </style>
+    <header id="header-bar-animation">
+        <nav>
+            <div class="nav-center">
+                <div class="nav-header">
+                    <img tabindex="0" style="cursor: pointer;" id="lightDark" class="icon"
+                        src="../img/dark theme icon/sun.png" alt="Sun">
+                    <img id="logo" class="icon" src="../img/whitelogo.png" alt="logo">
+                </div>
+                <div class="nav-toggle">
+                    <button class="nav-toggle">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+                <ul style="list-style: none;" class="links">
+                    <li>
+                        <a class="link" href="../index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="../html/about.html">ABOUT ME</a>
+                    </li>
+                    <li>
+                        <a href="mailto:theteocontact@gmail.com">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCq6sXKTdJwOO46vY_B9f0Rg" target="_blank">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Browser Extensions</h1>
+        <p>date:25/08/2021</p>
+        <h2>Jump to content:</h2>
+        <div class="dropdown">
+            <button class="dropbtn" style="font-size: 2.2em;">
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#Dark_Reader">Dark Reader</a>
+                <a href="#uBlock">uBlock</a>
+                <a href="#Todoist">Todoist</a>
+            </div>
+        </div>
+        <p>*press the photos to access their website*</p>
+
+        <br>
+
+        <h2 id="Dark_Reader">Dark Reader</h2>
+        <a href="https://darkreader.org/" target="_blank"><img width=450px class="images"
+                src="../img/Browser Extensions/dark-reader1.png" alt="dark reader"></a>
+        <h4 for="table">Compatible with:</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Chrome</th>
+                    <th>Firefox</th>
+                    <th>Safari</th>
+                    <th>Edge</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Dark Reader is an extensions that allows you to customize the layout of any web page. If you are a fan of
+            dark mode this is the perfect extensions for you. Dark Reader will reduce the stress of your eyes while
+            surfing the web.</p>
+        <p>At the same time, it is easy to use and allows you to control the brightness, contrast, sepia and grayscale.
+        </p>
+        <img src="../img/Browser Extensions/dark-reader2.png" class="images" width=250px class="images"
+            alt="dark reader control center">
+
+        <br>
+
+        <h2 id="uBlock">uBlock</h2>
+        <a href="https://github.com/gorhill/uBlock#ublock-origin" target=_blank><img class="images" width="350px"
+                src="../img/Browser Extensions/uBlock1.png" alt=""></a>
+        <h4 for="table">Compatible with:</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Chrome</th>
+                    <th>Firefox</th>
+                    <th>Safari</th>
+                    <th>Edge</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Are you annoyed with all these ads that practically are more than the web site itself?</p>
+        <p>Well, even if this sounds like an add, is not. I used uBlock for quite a while now and all I can say is that
+            it works. You can easily toggle the on/off switch. It has an basic mode and a more advance one, but I can
+            say that I only needed the basic one.</p>
+        <p>This is how it looks like:</p>
+        <img src="../img/Browser Extensions/uBlock2.png" width=200px class="images" alt="ubLock basic mode">
+
+        <br>
+
+        <h2 id="Todoist">Todoist</h2>
+        <a href="https://todoist.com/"><img class="images" src="../img/Browser Extensions/todoist1.png"
+                alt="todoist logo"></a>
+        <h4 for="table">Compatible with:</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Chrome</th>
+                    <th>Firefox</th>
+                    <th>Safari</th>
+                    <th>Edge</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Todoist is an extension that allows you to create a TO DO LIST.</p>
+        <p>Since this is not a full review for the service, I will just mention that this is available, multi platform,
+            as an app on Windows, Linux, MacOS, Apple Watch, Wear OS, android, IOS and has a dedicated extension for
+            Email apps (Gmail, Outlook)</p>
+        <p>
+            Todoist let's you create projects with different tasks, create a little karma chart for your accomplishments
+            and supports repeating task periodically (such as every Friday).</p>
+        <p>It has different themes (some paid some free).</p>
+        <p>This is how mine looks like:</p>
+        <img src="../img/Browser Extensions/todoist2.png" class="images" width=600px alt="my to do list">
+
+        <br>
+
+        <p>This is all for today. Thank you for reading my article!</p>
+
+
+
+
+    </main>
+
+    <footer>
+        <p style="text-align: center;">©COPYRIGHT TEO</p>
+    </footer>
+
+    <div class="container-end-page">
+        <h1 style="text-align: center;">Feel free to share your ideas!</h1>
+        <p style="text-align: center;">Any advice is welcome as well as any questions about my posts.</p>
+    </div>
+
+    <script src="../javascript/dropDownLinks.js"></script>
+    <script src="../javascript/darkmode.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+.about-layout {
+  margin-top: 2rem;
+  display: grid;
+  justify-items: center;
+  margin-bottom: 2rem;
+}
+.write {
+  padding: 1rem;
+  background-image: url(../img/codrut_about-me.jpg);
+  background-size: contain;
+  width: 95%;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.267);
+  display: grid;
+  border-radius: 2rem;
+}
+#text {
+  background-color: var(--accent-color-transparent);
+  color: var(--text-color);
+  text-align: center;
+  border-radius: 1rem;
+}
+h1 {
+  border-bottom: none;
+}
+
+

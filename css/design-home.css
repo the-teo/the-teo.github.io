@@ -1,0 +1,178 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inconsolata", monospace;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-weight: var(--font-weight);
+}
+
+nav {
+  background-color: var(--accent-color);
+  box-shadow: var(--light-shadow);
+  border-radius: 0 0 1rem 1rem;
+}
+nav:hover{
+  background-color: var(--accent-color-hover);
+}
+.nav-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  transition: var(--transition);
+}
+.nav-center {
+  align-self: right;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+.nav-toggle {
+  align-self: center;
+  justify-self: right;
+  padding-right: 1rem;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.nav-toggle:hover,
+.nav-toggle:focus {
+  color: var(--text-color-hover);
+}
+.links li a {
+  text-transform: uppercase;
+  color: var(--text-color);
+  text-transform: capitalize;
+  display: block;
+  padding: 0.5rem;
+  transition:  var(--transition)
+}
+.links li :hover,
+.links li :focus {
+  border-radius: 1rem;
+  color: var(--text-color-hover);
+  transform: scale(1.1);
+  transition: var(--transition);
+  background-color: var(--accent-color);
+}
+.links li :focus {
+  background-color: var(--accent-color-hover);
+}
+.links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition); 
+  padding-left: 1rem;
+}
+.show-links {
+  height: auto;
+}
+
+.icon {
+  padding-right: 1rem;
+  width: 3rem;
+}
+
+:focus {
+  outline: none;
+  text-decoration: none;
+}
+::-moz-focus-inner {
+  border: 0;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--backgorund-color);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background: var(--accent-color);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color-hover);
+}
+
+footer {
+  background-color: rgb(166, 152, 153);
+  color: black;
+  text-align: center;
+  border-radius: 1rem 1rem 0 0;
+  margin-top: 2rem;
+  padding: 0.2rem;
+}
+.container-end-page {
+  background-color: var(--accent-color);
+  padding: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-center {    
+    max-width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    padding: 1rem;
+    align-items: center;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none; 
+  }
+  .links {
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .links a{
+    padding: 0;
+    margin: auto;
+  }
+  .links li a:hover,
+  .links li a:focus {
+    background-color: transparent;
+  }
+}
+
+:root {
+  --post-hover-shadow: rgb(255, 255, 255);
+  --background-color: rgb(48, 54, 47);
+  --text-color: rgb(255, 255, 255);
+  --text-color-hover: rgb(0, 0, 0);
+  --welcome-text-color: rgb(161, 185, 94);
+  --background-welcome-text:rgba(48, 54, 47, 0.80);
+  --accent-color: rgb(119, 150, 109);
+  --accent-color-hover: rgb(185, 94, 94);
+  --font-weight: 400;
+  --transition: all 0.2s ease 0s;;
+}
+.light-theme {
+  --post-hover-shadow: rgb(0, 0, 0);
+  --background-color: rgb(246, 255, 248);
+  --text-color: rgb(0, 0, 0);
+  --text-color-hover: rgb(255, 255, 255);
+  --welcome-text-color: rgb(255, 61, 61);
+  --background-welcome-text:rgba(246, 255, 248, 0.80);
+  --accent-color: rgb(185, 94, 94);;
+  --accent-color-hover: rgb(119, 150, 109);
+  --font-weight: 550;
+  --transition: all 0.2s ease 0s;
+}
