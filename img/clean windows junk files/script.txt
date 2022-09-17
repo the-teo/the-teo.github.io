@@ -1,0 +1,99 @@
+In this article I will present you ways to get rid of junk files on windows. I will guide you step by step.
+
+*NO IMPORTANT FILE WILL BE DELETED USING THESE METHODS*
+
+
+
+-Clean Manager
+
+I find clean manager as an easy way to delete junk files since it has an interface familiar to the user.
+
+Firstly, we will access RUN, using WINDOWS+R command
+
+You will see this little windows popping up:
+
+.....
+
+
+
+Then type "cleanmgr" to open clean manager and OK
+
+You will see this:
+
+....
+
+Choose what disc to clean and hit OK(if you have more than one ssd/hdd you will need to do this for each one, since they are treated as separate entities by the system)
+
+...
+
+Now you can choose what files to delete (checking all off them is ok, your computer will not be affected, but you have the option to delete only what you don't want)
+
+
+And then you'll wait for them to be delete and you successfully achieved what you wanted.
+
+
+
+-Tree
+
+Tree is a command similar with clean manager, but instead of you deciding what to delete, it will delete all unnecessary files using the command line.
+
+
+
+First, we will access RUN, using WINDOWS+R command
+
+We will type tree
+
+.....
+
+Then hit OK and this will appear on your screen
+
+....
+
+Just let it finished, no action needed, it will take care of everything for you.
+
+
+
+-Temp
+
+This will show all the temporally files from your system that are not useful and can make your computer slower.
+With clean manager you already delete it, but if you only want to delete temporally filles, you can do this.
+
+Firstly,as before, we will access RUN, using WINDOWS+R command
+
+We will type %temp%
+
+....
+
+After that, you will see a windows like this:
+
+...
+
+Select all and hit DELETE
+
+Then everything will be similar to deleting any file from a computer.
+
+
+
+- Prefetch
+
+Prefetch files are practically caches files that are used on windows to remember what the user uses the most, and making the process of opening the task faster.
+Sometimes there are to many prefetch files, to heavy for your computer to handle, making it slower.
+You can safely delete all prefetch files, or only the one you want, without breaking anything.
+
+
+As the first step we will access RUN, using WINDOWS+R command
+
+We will type prefetch
+
+....
+
+A window will be open
+
+You can select all files or only what you like and hit DELETE
+
+.....
+
+
+
+
+
