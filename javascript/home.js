@@ -53,7 +53,7 @@ var lightDark = document.getElementById("lightDark");
                 alt: 'photo of a puzzle piece',
                 name: 'Gnome Extensions',
                 description: 'Gonna show you some cool extensions I use.',
-                categorie: 'linux',
+                categorie: 'linux pc',
             },
             {
                 id: 1,
@@ -71,7 +71,7 @@ var lightDark = document.getElementById("lightDark");
                 alt: 'photo of my firefox start page',
                 name: ' Firefox Home Page Background',
                 description: 'In this post I will show you how to personalise Firefox home page without any addition add-on.',
-                categorie: 'pc',
+                categorie: 'pc windows linux',
             },
             {
                 id: 3,
@@ -80,7 +80,7 @@ var lightDark = document.getElementById("lightDark");
                 alt: 'photo of usb sticks',
                 name: 'Multiboot USB',
                 description: "I'll exlplain how to create and use a multiboot USB.",
-                categorie: 'pc',
+                categorie: 'pc windows',
             },
             {
                 id: 4,
@@ -89,7 +89,7 @@ var lightDark = document.getElementById("lightDark");
                 alt: 'photo of a browser template',
                 name: 'Browser',
                 description: 'Which browser is for you?<',
-                categorie: 'pc',
+                categorie: 'other',
             },
             {
                 id: 5,
@@ -98,7 +98,7 @@ var lightDark = document.getElementById("lightDark");
                 alt: 'photo of a search bar',
                 name: 'Search engine',
                 description: 'I will first explain what a search engine does, then show you the most known one.',
-                categorie: 'pc',
+                categorie: 'other',
             },
             {
                 id: 6,
@@ -126,7 +126,7 @@ var lightDark = document.getElementById("lightDark");
                 alt: 'colorfull image',
                 name: 'Colors',
                 description: 'About color codes, such as rgb, hex and hsl.',
-                categorie: 'pc',
+                categorie: 'other',
             },
             {
                 id: 9,
@@ -153,7 +153,7 @@ var lightDark = document.getElementById("lightDark");
 
         const showPost = (items) => {
             document.querySelector('.posts').innerHTML = items.map((item) => {
-                var { link, image, alt, name, description } = item;
+                var { link, image, alt, name, description, categorie } = item;
                 return (
                  `<a href="${link}">
                    <div class="post">
@@ -172,4 +172,51 @@ var lightDark = document.getElementById("lightDark");
         showPost(categories);
 
         //category buttons
+        document.querySelector('.pc').addEventListener('click', function(){
+            const filteredData = categories.filter((item) => {
+                return (
+                    item.categorie.includes('pc')
+                )
+            })
+            showPost(filteredData)
+        })
+        document.querySelector('.code').addEventListener('click', function(){
+            const filteredData = categories.filter((item) => {
+                return (
+                    item.categorie.includes('code')
+                )
+            })
+            showPost(filteredData)
+        })
+        document.querySelector('.windows').addEventListener('click', function(){
+            const filteredData = categories.filter((item) => {
+                return (
+                    item.categorie.includes('windows')
+                )
+            })
+            showPost(filteredData)
+        })
+        document.querySelector('.linux').addEventListener('click', function(){
+            const filteredData = categories.filter((item) => {
+                return (
+                    item.categorie.includes('linux')
+                )
+            })
+            showPost(filteredData)
+        })
+        document.querySelector('.other').addEventListener('click', function(){
+            const filteredData = categories.filter((item) => {
+                return (
+                    item.categorie.includes('other')
+                )
+            })
+            showPost(filteredData)
+        })
+        document.querySelector('.all').addEventListener('click', function(){
+            const filteredData = categories.filter((item) => {
+                return (item)
+            })
+            showPost(filteredData)
+        })
+
         
