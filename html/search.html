@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/design.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/whitelogo.png">
+    <title>Search</title>
+</head>
+
+<style>
+    .posts>a {
+        margin-top: 5rem;
+        display: flex;
+        color: var(--text-color);
+        flex-direction: row;
+        width: 90%;
+        height: 80%;
+        border-radius: 25px;
+        text-align: center;
+        margin-left: 20px;
+        transition: var(--transition);
+    }
+
+    .post>div>p {
+        padding: 1rem;
+    }
+
+    a:focus>.post {
+        box-shadow: 3px 6px 10px var(--post-hover-shadow);
+        transform: scale(1.01);
+    }
+
+    .post:hover,
+    .post:focus {
+        box-shadow: 3px 6px 10px var(--post-hover-shadow);
+        transform: scale(1.01);
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    h4 {
+        color: var(--text-color);
+        transition: color 0.2s linear;
+        text-decoration: underline;
+    }
+
+    h4:hover,
+    h4:focus {
+        color: var(--accent-color-hover);
+    }
+
+    .post>img {
+        height: 100%;
+        width: 100%;
+        border-radius: 1em 0 0 1em;
+    }
+
+
+    #postList {
+        padding-inline-start: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 20px;
+    }
+
+    .post {
+        width: 100%;
+        list-style-type: none;
+        background-color: var(--accent-color);
+        border-radius: 1em;
+        display: grid;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        align-items: center;
+        justify-items: center;
+    }
+
+    #searchBar {
+        width: 100%;
+        height: 2rem;
+        border-radius: 1em;
+        border: 0.1rem solid #ffffff;
+        background-color: var(--accent-color);
+        padding: 1em;
+        font-size: 1.5rem;
+        color: var(--textcolor);
+    }
+
+    #searchWrapper {
+        position: relative;
+    }
+
+    #searchWrapper::after {
+        position: absolute;
+        top: 7px;
+        right: 15px;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-center">
+                <div class="nav-header">
+                    <img tabindex="0" style="cursor: pointer;" id="lightDark" class="icon"
+                        src="../img/dark theme icon/sun.png" alt="Sun">
+                    <img id="logo" class="icon" src="../img/whitelogo.png" alt="logo">
+                </div>
+                <div class="nav-toggle">
+                    <button class="nav-toggle">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+                <ul style="list-style: none;" class="links">
+                    <li>
+                        <a class="link" href="../index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="../html/about.html">ABOUT ME</a>
+                    </li>
+                    <li>
+                        <a href="mailto:theteocontact@gmail.com">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCq6sXKTdJwOO46vY_B9f0Rg" target="_blank">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="searchWrapper">
+            <input type="search" id="searchBar" placeholder="search for a post" />
+        </div>
+        <div class="posts">
+        </div>
+    </main>
+
+    <script src="../javascript/darkmode.js"></script>
+    <script>
+        const posts = [
+            {
+                id: 0,
+                link: '../html/gnome_extensions.html',
+                image: '../img/gnome_extensions/thumbnail.png',
+                alt: 'photo of a puzzle piece',
+                name: 'Gnome Extensions',
+                description: 'Gonna show you some cool extensions I use.',
+            },
+            {
+                id: 1,
+                link: '../html/browserextensions.html',
+                image: '../img/Browser Extensions/thumbnail.png' ,
+                alt: 'photo of extensions',
+                name: 'Browser Extensions',
+                description: 'I will present some of the extensions that I use daily on my web browser.',
+            },
+            {
+                id: 2,
+                link: '../html/firefoxwallpaper.html',
+                image: '../img/firefoxhomepagebackground/thumbnail.png' ,
+                alt: 'photo of my firefox start page',
+                name: ' Firefox Home Page Background',
+                description: 'In this post I will show you how to personalise Firefox home page without any addition add-on.',
+            },
+            {
+                id: 3,
+                link: '../html/multibootusb.html',
+                image: '../img/multibootUSB/memory-stick-1267620_1920.jpg' ,
+                alt: 'photo of usb sticks',
+                name: 'Multiboot USB',
+                description: "I'll exlplain how to create and use a multiboot USB.",
+            },
+            {
+                id: 4,
+                link: '../html/browser.html',
+                image: '../img/browser/browser-thumbnail.png' ,
+                alt: 'photo of a browser template',
+                name: 'Browser',
+                description: 'Which browser is for you?<',
+            },
+            {
+                id: 5,
+                link: '../html/searchengine.html',
+                image: '../img/search engine/search-bar.jpg' ,
+                alt: 'photo of a search bar',
+                name: 'Search engine',
+                description: 'I will first explain what a search engine does, then show you the most known one.',
+            },
+            {
+                id: 6,
+                link: '../html/cleanjunkfiles.html',
+                image: '../img/clean windows junk files/thumbnail.jpg' ,
+                alt: 'photo of disk manager',
+                name: 'Clean junk files on Windows',
+                description: 'I will show you ways to make your computer faster, deleting unnecessary files.',
+                
+            },
+            {
+                id: 7,
+                link: '../html/vsextentions.html',
+                image: '../img/vsextension.png' ,
+                alt: 'visual studio code"',
+                name: 'Visual Studio Code extensions',
+                description: 'Learn about my most use extension while programming',
+            },
+            {
+                id: 8,
+                link: '../html/colors.html',
+                image: 'https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' ,
+                alt: 'colorfull image',
+                name: 'Colors',
+                description: 'About color codes, such as rgb, hex and hsl.',
+            },
+            {
+                id: 9,
+                link: '../html/csslink.html',
+                image: 'https://www.seekpng.com/png/detail/222-2229726_intro-to-html-css-html-css-icon.png' ,
+                alt: 'logos of html and css',
+                name: 'Link Css stylesheet',
+                description: 'How do I link my Css stylesheet to my html file?',
+            },
+
+            {
+                id: 10,
+                link: '',
+                image: '' ,
+                alt: '',
+                name: '',
+                description: '',
+            },
+            
+        ];
+
+        const categories = [...new Set(posts.map((item) => { return item }))]
+
+        document.getElementById('searchBar').addEventListener('keyup', (e) => {
+            const searchData = e.target.value.toLowerCase();
+            const filteredData = categories.filter((item) => {
+                return (
+                    item.name.toLowerCase().includes(searchData) || item.description.toLowerCase().includes(searchData)
+                )
+            })
+            showPost(filteredData)
+        });
+
+        const showPost = (items) => {
+            document.querySelector('.posts').innerHTML = items.map((item) => {
+                var { link, image, alt, name, description } = item;
+                return (
+                 `<a href="${link}">
+                   <div class="post">
+                        <img class="post-images"
+                            src="${image}"
+                            alt="${alt}">
+                        <div>
+                            <h4>${name}</h4>
+                            <p>${description}</p>
+                        </div>
+                   </div>
+                </a>`
+                )
+            }).join('')
+        };
+        showPost(categories);
+
+    </script>
+</body>
+
+</html>

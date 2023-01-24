@@ -17,6 +17,9 @@ nav {
   box-shadow: var(--light-shadow);
   border-radius: 0 0 1rem 1rem;
 }
+nav:hover{
+  background-color: var(--accent-color-hover);
+}
 .nav-header {
   display: flex;
   align-items: center;
@@ -51,7 +54,7 @@ nav {
   text-transform: capitalize;
   display: block;
   padding: 0.5rem;
-  transition:  var(--transition);
+  transition:  var(--transition)
 }
 .links li :hover,
 .links li :focus {

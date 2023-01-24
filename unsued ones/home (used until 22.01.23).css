@@ -12,70 +12,26 @@
   justify-content: flex-end;
   flex-direction: column;
 }
-.welcome > h1, .welcome > p {
+.welcome-items {
   text-align: center;
   font-size: 1.90em;
   background-color: var(--background-welcome-text);
   z-index: 1;
 }
 
-#searchBar {
-  width: 90%;
-  height: 1rem;
-  border-radius: 1em;
-  border: 0.1rem solid var(--text-color);
-  background-color: var(--accent-color);
-  padding: 1em;
-  font-size: 1.3rem;
-  color: var(--textcolor);
-}
-
-#searchWrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding:5%;
-}
-
-#searchWrapper::after {
-  position: absolute;
-}
-
-.categories {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10%;
-  padding: 2rem;
-}
-
-.categories > div {
-  color: var(--accent-color);
-  cursor: pointer;
-  text-align: center;
-}
-
-.categories > div > i {
-  font-size: 2.5rem;
-}
-
-.categories > div:hover {
-  color: var(--accent-color-hover)
-}
 .posts {
-  padding: 0 10%;
   display: grid;
   grid-template-columns: 50% 50%;
   justify-content: center;
   align-items: center;
+  flex: 1 1 100px;
 }
 .post {
   margin-top: 5rem;
   display: flex;
-  color: var(--text-color);
+  color: rgb(255, 255, 255);
   flex-direction: column;
-  background-color: var(--accent-color);
+  background-color: rgb(73, 68, 68);
   width: 90%;
   height: 80%;
   border-radius: 25px;
@@ -99,6 +55,7 @@ a {
   text-decoration: none;
 }
 h4 {
+  color: var(--accent-color);
   transition: color 0.2s linear;
   text-decoration: underline;
 }
@@ -118,9 +75,7 @@ h4:focus {
     align-items: center;
   }
   .post {
+    margin-top: 50px;
     width: 80vw;
   }
-  .categories {
-    gap: 5%;
-  } 
 }

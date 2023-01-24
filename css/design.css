@@ -16,7 +16,6 @@ body {
   float: left;
   overflow: hidden;
   width: 100%;
-  transition: var(--transition);
 }
 .dropbtn {
   transform: rotate(270deg);
@@ -46,6 +45,7 @@ body {
   border-radius: 1rem;
   min-width: 160px;
   margin-bottom: 1rem;
+  transition: var(--transition);
 }
 .dropdown-content a:hover,
 .dropdown-content a:focus {
@@ -71,9 +71,6 @@ nav {
   background-color: var(--accent-color);
   box-shadow: var(--light-shadow);
   border-radius: 0 0 1rem 1rem;
-}
-nav:hover{
-  background-color: var(--accent-color-hover);
 }
 .nav-header {
   display: flex;
