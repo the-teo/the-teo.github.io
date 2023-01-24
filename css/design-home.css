@@ -29,6 +29,7 @@ nav {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
+  font-size: 1.2em;
 }
 .nav-toggle {
   align-self: center;
