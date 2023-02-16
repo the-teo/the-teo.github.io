@@ -18,3 +18,17 @@ lightDark.onclick = function(){
 function menu(){
     document.body.classList.toggle("menu");
 }
+
+const hamburger = document.querySelector(".nav-toggle");
+
+    hamburger.addEventListener("click", () => {
+      const currentState = hamburger.getAttribute("data-state");
+
+      if (!currentState || currentState === "closed") {
+        hamburger.setAttribute("data-state", "opened");
+        hamburger.setAttribute("aria-expanded", "true");
+      } else {
+        hamburger.setAttribute("data-state", "closed");
+        hamburger.setAttribute("aria-expanded", "false");
+      }
+    });

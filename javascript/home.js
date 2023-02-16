@@ -47,7 +47,16 @@ var lightDark = document.getElementById("lightDark");
         //search
         const posts = [
             {
-                id: 0,
+                id: 10,
+                link: ' html/servers.html',
+                image: 'img/servers/server-thumbnail.jpg' ,
+                alt: 'a phots of hadn and some lights',
+                name: 'Servers',
+                description: 'What are servers and what we use them for?',
+                categorie: 'pc linux windows ',
+            },
+            {
+                id: 9,
                 link: ' html/gnome_extensions.html',
                 image: 'img/gnome_extensions/thumbnail.png',
                 alt: 'photo of a puzzle piece',
@@ -56,7 +65,7 @@ var lightDark = document.getElementById("lightDark");
                 categorie: 'linux pc',
             },
             {
-                id: 1,
+                id: 8,
                 link: ' html/browserextensions.html',
                 image: ' img/Browser Extensions/thumbnail.png' ,
                 alt: 'photo of extensions',
@@ -65,7 +74,7 @@ var lightDark = document.getElementById("lightDark");
                 categorie: 'pc',
             },
             {
-                id: 2,
+                id: 7,
                 link: ' html/firefoxwallpaper.html',
                 image: ' img/firefoxhomepagebackground/thumbnail.png' ,
                 alt: 'photo of my firefox start page',
@@ -74,7 +83,7 @@ var lightDark = document.getElementById("lightDark");
                 categorie: 'pc windows linux',
             },
             {
-                id: 3,
+                id: 6,
                 link: ' html/multibootusb.html',
                 image: ' img/multibootUSB/memory-stick-1267620_1920.jpg' ,
                 alt: 'photo of usb sticks',
@@ -83,7 +92,7 @@ var lightDark = document.getElementById("lightDark");
                 categorie: 'pc windows',
             },
             {
-                id: 4,
+                id: 5,
                 link: ' html/browser.html',
                 image: ' img/browser/browser-thumbnail.png' ,
                 alt: 'photo of a browser template',
@@ -92,7 +101,7 @@ var lightDark = document.getElementById("lightDark");
                 categorie: 'other',
             },
             {
-                id: 5,
+                id: 4,
                 link: ' html/searchengine.html',
                 image: ' img/search engine/search-bar.jpg' ,
                 alt: 'photo of a search bar',
@@ -101,7 +110,7 @@ var lightDark = document.getElementById("lightDark");
                 categorie: 'other',
             },
             {
-                id: 6,
+                id: 3,
                 link: ' html/cleanjunkfiles.html',
                 image: ' img/clean windows junk files/thumbnail.jpg' ,
                 alt: 'photo of disk manager',
@@ -111,7 +120,7 @@ var lightDark = document.getElementById("lightDark");
                 
             },
             {
-                id: 7,
+                id: 2,
                 link: ' html/vsextentions.html',
                 image: ' img/vsextension.png' ,
                 alt: 'visual studio code"',
@@ -120,22 +129,13 @@ var lightDark = document.getElementById("lightDark");
                 categorie: 'code',
             },
             {
-                id: 8,
+                id: 1,
                 link: ' html/colors.html',
                 image: 'https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' ,
                 alt: 'colorfull image',
                 name: 'Colors',
                 description: 'About color codes, such as rgb, hex and hsl.',
                 categorie: 'other',
-            },
-            {
-                id: 9,
-                link: ' html/csslink.html',
-                image: 'https://www.seekpng.com/png/detail/222-2229726_intro-to-html-css-html-css-icon.png' ,
-                alt: 'logos of html and css',
-                name: 'Link Css stylesheet',
-                description: 'How do I link my Css stylesheet to my html file?',
-                categorie: 'code',
             },
         ];
 

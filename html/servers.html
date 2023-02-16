@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/design.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="..\img\whitelogo.png">
+    <script src="https://kit.fontawesome.com/ddf86ec253.js" crossorigin="anonymous"></script>
+    <title>Servers</title>
+</head>
+
+<body>
+    <style>
+        .tags {
+            background-color: rgba(163, 178, 218, 0.514);
+            color: black;
+            font-family: "Nanum Gothic Coding", monospace;
+            display: block;
+            width: 50%;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        .images {
+            border-radius: 15px;
+            width: 60%;
+            margin: 1em 0;
+        }
+
+        ol li {
+            font-size: 1.1em;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        @media (max-width:801px) {
+            .images {
+                width: 95%;
+            }
+
+            .tags {
+                width: 90%;
+            }
+        }
+    </style>
+    <header>
+        <nav>
+            <div class="nav-center">
+                <div class="nav-header">
+                    <img tabindex="0" style="cursor: pointer;" id="lightDark" class="icon"
+                        src="../img/dark theme icon/sun.png" alt="Sun">
+                    <img id="logo" class="icon" src="../img/whitelogo.png" alt="logo">
+                </div>
+                <div class="nav-toggle">
+                    <button class="nav-toggle">
+                        <svg stroke="var(--button-color)" fill="none" class="hamburger" viewBox="-10 -10 120 120"
+                            width="50">
+                            <path class="line" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"
+                                d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <ul style="list-style: none;" class="links">
+                    <li>
+                        <a class="link" href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../html/about.html">About Me</a>
+                    </li>
+                    <li>
+                        <a href="mailto:theteocontact@gmail.com">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCq6sXKTdJwOO46vY_B9f0Rg">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Servers</h1>
+        <p>date:16/02/2023</p> 
+
+        <h2>Jump to content:</h2>
+        <div class="dropdown">
+            <button class="dropbtn" onclick=menu() style="font-size: 2.2em;">
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#What_is_a_server">What is a server?</a>
+                <a href="#use">What we use them for:</a>
+                <a href="#types">What kind of server are out there?</a>
+                <a href="#os">Operating Systems for servers</a>
+                <a href="#conclusion">Conclusion</a>
+            </div>
+        </div>
+
+        <h2 id="What_is_a_server">What is a server?</h2>
+        <p>A server is a computer program, device, or a computer system that provides a service to other computers or
+            devices connected to a network. A server can be hardware or software-based, and it can serve a variety of
+            functions.</p>
+
+        <img class="images" src="../img/servers/network.jpg" alt="a network diagram">
+
+        <br>
+
+        <h2 id="use">What we use them for:</h2>
+        <p>In a computer network, servers are used to manage and share resources, such as files, applications, printers,
+            databases, etc.</p>
+
+        <br>
+
+        <h2 id="types">What kind of server are out there?</h2>
+        <p>Servers can be categorized based on the type of services they provide, such as <b><i>file servers, web
+                    servers,
+                    mail servers, application servers, database servers</i></b>, and others. They can also be classified
+            based on their
+            physical location, such as <b><i>cloud servers, on-premise servers, or dedicated servers.</i></b></p>
+
+        <br>
+
+        <h2 id="os">Operating Systems for servers</h2>
+        <p>A server typically runs a specialized operating system and software that allows it to perform its specific
+            functions efficiently and securely.</p>
+        <br>
+        <h3><label for="list-style">Linux → free and open-source</label></h3>
+        <p style="color:var(--accent-color)">*Press on the photo to get on their websites*</p>
+        <br>
+        <ol>
+            <li>Ubuntu Server</li>
+            <a href="https://ubuntu.com/download/server" target="_blank">
+                <img class="images" src="../img/servers/ubuntu_server.png" alt="dowloading page ubuntu server">
+            </a>
+            <li>Debian</li>
+            <a href="https://www.debian.org/">
+                <img class="images" src="../img/servers/debian.png" alt="dowloading page debian">
+            </a>
+            <li>OpenSUSE Leap</li>
+            <a href="https://get.opensuse.org/leap/15.4/" target="_blank">
+                <img class="images" src="../img/servers/opensuse_leap.png" alt="dowloading page opensuse leap">
+            </a>
+            <li>SUSE Linux Enterprise Server</li>
+            <a href="https://www.suse.com/products/server/" target="_blank">
+                <img class="images" src="../img/servers/suse_server.png"
+                    alt="dowloading page suse enterprise linux server">
+            </a>
+            <li>Fedora Server</li>
+            <a href="https://getfedora.org/en/server/" target="_blank">
+                <img class="images" src="../img/servers/fedora.png" alt="dowloading page fedora server">
+            </a>
+            <li>Arch Linux</li>
+            <a href="https://archlinux.org/download/" target="_blank">
+                <img class="images" src="../img/servers/arch_linux.png" alt="dowloading page arch linux">
+            </a>
+        </ol>
+        <h3><label for="list-style">Windows → payed</label></h3>
+        <p style="color:var(--accent-color)">*Press on the photo to get on their websites*</p>
+        <br>
+        <ol>
+            <li>Windows Server</li>
+            <a href="https://www.microsoft.com/en-us/windows-server/" target="_blank">
+                <img class="images" src="../img/servers/windows-server.png" alt="dowloading page windows server">
+            </a>
+        </ol>
+
+        <h2 id="conclusion">Conclusion</h2>
+        <p>Overall, servers are an essential component of modern computer networks, and they play a critical role in
+            providing the services and resources that users depend on.</p>
+    </main>
+
+    <footer>
+        <p style="text-align: center">©COPYRIGHT TEO</p>
+    </footer>
+
+    <div class="container-end-page">
+        <h1 style="text-align: center;">Feel free to share your ideas!</h1>
+        <p style="text-align: center;">Any advice is welcome as well as any questions about my posts.</p>
+    </div>
+
+    <script src="../javascript/dropDownLinks.js"></script>
+    <script src="../javascript/darkmode.js"></script>
+</body>
+
+</html>

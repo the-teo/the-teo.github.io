@@ -44,7 +44,7 @@ nav {
 }
 .nav-toggle:hover ,
 .nav-toggle:focus {
-  --button-color: var(--text-color-hover);
+  --button-color: #fff;
 }
 
 .nav-toggle {
@@ -74,10 +74,9 @@ nav {
 .links li a {
   text-transform: uppercase;
   color: var(--text-color);
-  text-transform: capitalize;
   display: block;
   padding: 0.5rem;
-  transition:  var(--transition);
+  transition: var(--transition);
 }
 .links li :hover,
 .links li :focus {

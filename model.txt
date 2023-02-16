@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="../css/design.css">
     <link rel="icon" type="image/png" sizes="32x32" href="..\img\whitelogo.png">
     <script src="https://kit.fontawesome.com/ddf86ec253.js" crossorigin="anonymous"></script>
-    <title>Browser Extensions</title>
+    <title>Model</title>
 </head>
 
 <body>
@@ -27,9 +27,9 @@
             border-radius: 15px;
         }
 
-        img {
+        .imgages {
             border-radius: 15px;
-            width 60%;
+            width: 60%;
         }
 
         @media (max-width:801px) {
@@ -46,12 +46,16 @@
          <nav>
             <div class="nav-center">
                 <div class="nav-header">
-                    <img tabindex="0" style="cursor: pointer;" id="lightDark" class="icon" src="img/dark theme icon/sun.png" alt="Sun">
-                    <img id="logo" class="icon" src="img/whitelogo.png" alt="logo">
+                    <img tabindex="0" style="cursor: pointer;" id="lightDark" class="icon" src="../img/dark theme icon/sun.png" alt="Sun">
+                    <img id="logo" class="icon" src="../img/whitelogo.png" alt="logo">
                 </div>
-                <div class="nav-toggle">
+               <div class="nav-toggle">
                     <button class="nav-toggle">
-                        <i class="fa fa-bars"></i>
+                        <svg stroke="var(--button-color)" fill="none" class="hamburger" viewBox="-10 -10 120 120" width="50">
+                            <path class="line" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"
+                              d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70">
+                            </path>
+                          </svg>
                     </button>
                 </div>
                 <ul style="list-style: none;" class="links">
@@ -71,11 +75,6 @@
                             <i class="fa fa-youtube"></i>
                         </a>
                     </li>
-                    <li>
-                        <a href="html/search.html">
-                            <i class="fa fa-search"></i>
-                        </a>
-                    </li>
                 </ul>
             </div>
         </nav>
@@ -87,7 +86,7 @@
 
         <h2>Jump to content:</h2>
         <div class="dropdown">
-            <button class="dropbtn" onclick=menu() style="font-size: 2.2em;">≡
+            <button class="dropbtn" onclick=menu() style="font-size: 2.2em;">
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
@@ -106,8 +105,8 @@
     </footer>
 
     <div class="container-end-page">
-        <h1 style="text-align: center;">Feel free to share your ideas!</h1>
-        <p style="text-align: center;">Any advice is welcome as well as any questions about my posts.</p>
+        <h1 style="text-align: center">Feel free to share your ideas!</h1>
+        <p style="text-align: center">Any advice is welcome as well as any questions about my posts.</p>
     </div>
 
     <script src="../javascript/dropDownLinks.js"></script>

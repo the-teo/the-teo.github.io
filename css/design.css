@@ -5,11 +5,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+html {
   font-family: "Inconsolata", monospace;
   background-color: var(--background-color);
   color: var(--text-color);
   font-weight: var(--font-weight);
+  scroll-behavior: smooth;
 }
 
 .dropdown {
@@ -67,7 +68,7 @@ body {
   text-decoration: none;
 }
 
-nav {
+/* nav {
   background-color: var(--accent-color);
   box-shadow: var(--light-shadow);
   border-radius: 0 0 1rem 1rem;
@@ -129,7 +130,96 @@ nav {
 }
 .show-links {
   height: auto;
+} */
+
+nav {
+  background-color: var(--accent-color);
+  box-shadow: var(--light-shadow);
+  border-radius: 0 0 1rem 1rem;
 }
+.nav-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  transition: var(--transition);
+}
+.nav-center {
+  align-self: right;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  font-size: 1.2em;
+}
+.nav-toggle {
+  align-self: center;
+  justify-self: right;
+  padding-right: 1rem;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.nav-toggle:hover ,
+.nav-toggle:focus {
+  --button-color: #fff;
+}
+
+.nav-toggle {
+  --button-color: var(--text-color);
+  overflow: hidden;
+}
+
+.nav-toggle .hamburger {
+  transition: translate 700ms, rotate 700ms;
+}
+
+.nav-toggle[aria-expanded="true"] .hamburger {
+  translate: 10px -10px;
+  rotate: 0.125turn;
+}
+
+.nav-toggle .line {
+  transition: 700ms;
+  stroke-dasharray: 60 31 60 300;
+}
+
+.nav-toggle[aria-expanded="true"] .line {
+  stroke-dasharray: 60 105 60 300;
+  stroke-dashoffset: -90;
+}
+
+.links li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text-color);
+  display: block;
+  padding: 0.5rem;
+  transition:  var(--transition);
+}
+.links li :hover,
+.links li :focus {
+  border-radius: 1rem;
+  color: var(--text-color-hover);
+  transform: scale(1.1);
+  transition: var(--transition);
+  background-color: var(--accent-color);
+}
+.links li :focus {
+  background-color: var(--accent-color-hover);
+}
+.links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition); 
+  padding-left: 1rem;
+}
+.show-links {
+  height: auto;
+}
+
 .icon {
   padding-right: 1rem;
   width: 3rem;
@@ -166,6 +256,7 @@ h1 {
 
 p {
   margin-top: 1rem;
+  font-size: 1.2em;
 }
 
 h2 {
